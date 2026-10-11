@@ -1,0 +1,15 @@
+<storybook-header
+  [user]="user()"
+  (onLogin)="login()"
+  (onLogout)="logout()"
+  (onCreateAccount)="createAccount()"
+></storybook-header>
+
+<nav class="app-navigation" aria-label="Navegação principal">
+  <a routerLink="/index" routerLinkActive ariaCurrentWhenActive="page">Início</a>
+  <a routerLink="/formulario" routerLinkActive ariaCurrentWhenActive="page">Formulário</a>
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
